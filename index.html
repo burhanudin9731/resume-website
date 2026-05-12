@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burhanudin Ibrahim Abdullah - Resume</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.7;
+    }
+
+    /* HEADER */
+    header{
+      background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      color:white;
+      padding:20px 60px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .logo-section{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .profile-img{
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      border:3px solid #38bdf8;
+      object-fit:cover;
+    }
+
+    .logo-text h1{
+      font-size:24px;
+    }
+
+    .logo-text p{
+      font-size:14px;
+      opacity:0.9;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:25px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#38bdf8;
+    }
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(to right,#1e3a8a,#2563eb);
+      color:white;
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .hero h2{
+      font-size:45px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:850px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    /* CONTAINER */
+    .container{
+      width:90%;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:1fr 2fr;
+      gap:30px;
+    }
+
+    /* LEFT PANEL */
+    .left-panel{
+      display:flex;
+      flex-direction:column;
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h2{
+      color:#1d4ed8;
+      margin-bottom:15px;
+      border-bottom:3px solid #38bdf8;
+      padding-bottom:5px;
+    }
+
+    .contact p,
+    .skills li,
+    .languages li,
+    .interests li{
+      margin:10px 0;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    /* RIGHT PANEL */
+    .right-panel{
+      display:flex;
+      flex-direction:column;
+      gap:25px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+    }
+
+    table th{
+      background:#1d4ed8;
+      color:white;
+      padding:12px;
+    }
+
+    table td{
+      padding:12px;
+      border:1px solid #ddd;
+    }
+
+    .project-box{
+      background:#f8fafc;
+      padding:15px;
+      border-left:5px solid #2563eb;
+      border-radius:8px;
+      margin-top:15px;
+    }
+
+    .btn{
+      margin-top:20px;
+      padding:12px 22px;
+      border:none;
+      background:#2563eb;
+      color:white;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#1e40af;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    footer p{
+      margin:6px 0;
+    }
+
+    footer a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .navbar{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero h2{
+        font-size:32px;
+      }
+
+      header{
+        padding:20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+
+      <div class="logo-section">
+        <img 
+          src="image/burhan-profile image.jpeg" 
+          alt="Profile Picture"
+          class="profile-img"
+        >
+
+        <div class="logo-text">
+          <h1>Burhanudin Ibrahim Abdullah</h1>
+          <p>Computer Engineering Student</p>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Student Resume Portfolio</h2>
+
+    <p>
+      Dedicated Computer Engineering student with strong interest in web technologies,
+      cybersecurity, and software development. Passionate about creating modern,
+      responsive, and user-friendly digital solutions while continuously learning
+      new technologies and improving technical skills.
+    </p>
+  </section>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-panel">
+
+      <!-- CONTACT -->
+      <section class="card contact">
+        <h2>Contact</h2>
+
+        <p>📧 burhanudin9731@gmail.com</p>
+        <p>📱 +90 5355860451</p>
+        <p>📍 Türkiye</p>
+        <p>🌍 Citizenship: Kenya</p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="card" id="skills">
+        <h2>Technical Skills</h2>
+
+        <ul>
+          <li>HTML & Web Structure</li>
+          <li>Responsive Website Development</li>
+          <li>Frontend Development Basics</li>
+          <li>Introduction to Cybersecurity</li>
+          <li>Critical Thinking</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="card">
+        <h2>Languages</h2>
+
+        <ul class="languages">
+          <li>English</li>
+          <li>Turkish</li>
+          <li>Swahili</li>
+          <li>Somali</li>
+          <li>Oromo</li>
+        </ul>
+      </section>
+
+      <!-- INTERESTS -->
+      <section class="card" id="interests">
+        <h2>Personal Interests</h2>
+
+        <ul class="interests">
+          <li>Reading Technology Articles</li>
+          <li>Exploring New Places</li>
+          <li>Football</li>
+          <li>Basketball</li>
+          <li>Volleyball</li>
+          <li>Music & Entertainment</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-panel">
+
+      <!-- SUMMARY -->
+      <section class="card" id="summary">
+        <h2>Professional Summary</h2>
+
+        <p>
+          Dedicated Computer Engineering student with strong interest in
+          web technologies, cybersecurity, and software development.
+          Eager to gain practical experience while developing creative
+          and efficient digital solutions. Interested in internships,
+          collaborative development opportunities, and expanding skills
+          in programming, databases, and cybersecurity.
+        </p>
+
+        <button class="btn" onclick="showMessage()">
+          Contact Me
+        </button>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="card" id="education">
+        <h2>Academic Background</h2>
+
+        <table>
+          <tr>
+            <th>Qualification</th>
+            <th>School</th>
+            <th>Duration</th>
+          </tr>
+
+          <tr>
+            <td>BSc in Computer Engineering</td>
+            <td>Karabuk University</td>
+            <td>2024 - 2028</td>
+          </tr>
+
+          <tr>
+            <td>Secondary Education</td>
+            <td>Chogoria Boys High School</td>
+            <td>2019 - 2022</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="card" id="projects">
+        <h2>Experience & Projects</h2>
+
+        <div class="project-box">
+          <h3>Responsive Website Practice Project</h3>
+
+          <p>
+            Worked on creating a responsive webpage project during
+            online web development training programs.
+          </p>
+
+          <ul>
+            <li>Designed webpage layouts using HTML</li>
+            <li>Applied responsive design concepts</li>
+            <li>Improved webpage organization and formatting skills</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section class="card">
+        <h2>Training & Certificates</h2>
+
+        <ul>
+          <li>Google Cybersecurity Professional Certificate</li>
+          <li>Cybersecurity Fundamentals Training</li>
+          <li>HTML Basics Course</li>
+          <li>Responsive Web Design Certification</li>
+        </ul>
+      </section>
+
+      <!-- ADDITIONAL -->
+      <section class="card">
+        <h2>Additional Information</h2>
+
+        <p>
+          Available for internships and collaborative web development projects.
+          Interested in expanding skills in programming, databases, and cybersecurity.
+        </p>
+
+        <br>
+
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a href="https://github.com/burhanudin9731/resume-website.git" target="_blank">
+            Visit GitHub Project
+          </a>
+        </p>
+
+        <p><strong>Updated:</strong> 2026</p>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Burhanudin Ibrahim Abdullah</p>
+    <p>Computer Engineering Student | Resume Portfolio</p>
+    <p>Email: burhanudin9731@gmail.com</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    function showMessage(){
+      alert("Thank you for viewing my resume portfolio!");
+    }
+
+  </script>
+
+</body>
+</html>
